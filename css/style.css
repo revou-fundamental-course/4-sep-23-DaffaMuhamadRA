@@ -137,38 +137,37 @@ table {
 /* code */
 body {
     background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
-    background-color: #27005D;
+    background-color: #FFBB5C;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header h1,
-.header h2 {
-    color: #AED2FF;
-}
-
 .header h1 {
     font-size: 50px;
-    margin-top: 30px;
-    color: #9400FF;
+    margin-top: 15px;
+    color: #C63D2F;
+    font-family: 'Lobster', cursive;
 }
 
 .header h2 {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    color: #E25E3E;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header h2 span {
-    color: #9400FF;
+    color: #C63D2F;
 }
 
 .main {
     background-color: #AED2FF;
-    margin: 30px;
+    margin: 0px 30px 0px 30px;
     box-sizing: content-box;
     border: 1px solid grey;
     border-radius: 3px;
@@ -183,7 +182,11 @@ body {
     font-size: 30px;
 }
 
-.main p {
+#p_subJ {
+    text-align: center;
+}
+
+#p_desk {
     text-align: center;
     font-size: 20px;
 }
@@ -194,6 +197,7 @@ body {
     margin: auto;
     margin-top: 50px;
     border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 .head_p {
@@ -226,4 +230,124 @@ body {
     font-size: 30px;
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.kalkulator section {
+    align-items: center;
+}
+
+section input {
+    margin-top: 10px;
+}
+
+#SisiInputSection {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid black;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#SisiInputLuas {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid black;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+#SisiInputKeliling {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid black;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.kalkulator label {
+    font-size: 20px;
+}
+
+.kalkulator input {
+    padding: 10px 30px 10px 30px;
+}
+
+#inputButton {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputButton button {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.Rumus {
+    margin-top: 100px;
+}
+
+.Rumus h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#luas,
+#Keliling {
+    border: 2px solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+
+#luas h4,
+#Keliling h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#luas p,
+#Keliling p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #27005D;
+}
+
+.footer {
+    height: 40px;
+    padding-top: 10px;
+    background-color: black;
+
+}
+
+.footer h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
 }
