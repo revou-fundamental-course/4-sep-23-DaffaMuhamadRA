@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,18 +31,18 @@
                 <h3 id="h3_head">PERSEGI</h3>
             </div>
             <p id="p_desk">
-                🔸Sisi-sisi bujur sangkar sama panjangnya; sisi yang berdekatan membentuk sudut siku-siku.
+                🔸Sisi-sisi bujur sangkar sama panjangnya; sisi yang berdekatan membentuk sudut siku-siku. 🔸
                 <br>
-                🔸Diagonal sama panjang, saling membagi satu sama lain dan tegak lurus.
+                🔸Diagonal sama panjang, saling membagi satu sama lain dan tegak lurus. 🔸
             </p>
 
             <img src="img/persegi.png" alt="gambar persegi">
             <br>
-            <a href="">Rumus - Rumus</a>
+            <a href="#rumus" id="rumusbtn">Rumus</a>
 
 
             <div class="kalkulator">
-                <h4 id="judul">Kalkulator</h4>
+                <h4 id="judul">KALKULATOR</h4>
                 <h5>Masukan Satu Nilai</h5>
                 <section id="SisiInputSection">
                     <label for="inputField"> Sisi</label>
@@ -49,24 +51,24 @@
                 <div class="gridContainer">
                     <section id="SisiInputLuas">
                         <label for="inputluas">Luas</label>
-                        <input type="number" id="inputluas">
+                        <input type="number" id="inputluas" placeholder="Enter Value">
                     </section>
                     <section id="SisiInputKeliling">
-                        <label for="inputKeliling">keliling</label>
-                        <input type="number" id="inputKeliling">
+                        <label for="inputKeliling">Keliling</label>
+                        <input type="number" id="inputKeliling" placeholder="Enter Value">
                     </section>
                 </div>
                 <section id="inputButton">
-                    <button>Hitung</button>
-                    <button>Hapus</button>
+                    <button id="hitung">Hitung</button>
+                    <button id="hapus">Hapus</button>
                 </section>
             </div>
 
-            <div class="Rumus">
+            <div class="Rumus" id="rumus">
                 <h3>Rumus Persegi</h3>
                 <div class="gridContainer">
                     <section id="luas">
-                        <h4>luas</h4>
+                        <h4>Luas</h4>
                         <p>L = α . α</p>
                     </section>
                     <section id="Keliling">
@@ -85,6 +87,9 @@
     <div class="footer">
         <h2>Copyright ©️ 2023 KAMOD your modern calculator</h2>
     </div>
+
+    <!-- Java Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
