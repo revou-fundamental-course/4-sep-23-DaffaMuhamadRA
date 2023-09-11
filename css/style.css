@@ -337,6 +337,10 @@ section input {
     color: black
 }
 
+button:active {
+    background-color: red;
+}
+
 #hitung {
     background-color: wheat;
 }
