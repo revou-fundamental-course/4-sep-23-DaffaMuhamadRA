@@ -462,3 +462,9 @@ button.big-button:active::before {
 ::placeholder {
     text-align: center;
 }
+
+
+
+
+/* responsive */
+@media screen {}
