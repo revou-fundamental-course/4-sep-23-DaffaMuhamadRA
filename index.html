@@ -11,9 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lora:wght@500&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
 
     <!-- Java Script -->
-    <script src="js/script.js"></script>
+
+
 </head>
 
 <body>
@@ -33,7 +37,7 @@
                 <h3 id="h3_head">PERSEGI</h3>
             </div>
             <p id="p_desk">
-                🔸Sisi-sisi bujur sangkar sama panjangnya; sisi yang berdekatan membentuk sudut siku-siku. 🔸
+                🔸Sisi-sisi bujur sangkar sama panjangnya dan sisi yang berdekatan membentuk sudut siku-siku. 🔸
                 <br>
                 🔸Diagonal sama panjang, saling membagi satu sama lain dan tegak lurus. 🔸
             </p>
@@ -47,22 +51,22 @@
                 <h4 id="judul">KALKULATOR</h4>
                 <h5>Masukan Satu Nilai</h5>
                 <section id="SisiInputSection">
-                    <label for="inputField"> Sisi</label>
-                    <input type="number" id="inputField" placeholder="Enter Value">
+                    <label for="inputsisi"> Sisi</label>
+                    <input type="number" id="inputsisi" placeholder="Enter Value" oninput="hitungNilai()">
                 </section>
                 <div class="gridContainer">
                     <section id="SisiInputLuas">
                         <label for="inputluas">Luas</label>
-                        <input type="number" id="inputluas" placeholder="Enter Value">
+                        <input type="number" id="inputluas" placeholder="Enter Value" oninput="hitungNilai()">
                     </section>
                     <section id="SisiInputKeliling">
                         <label for="inputKeliling">Keliling</label>
-                        <input type="number" id="inputKeliling" placeholder="Enter Value">
+                        <input type="number" id="inputKeliling" placeholder="Enter Value" oninput="hitungNilai()">
                     </section>
                 </div>
                 <section id="inputButton">
-                    <button id="hitung">Hitung</button>
-                    <button id="hapus">Hapus</button>
+                    <button class="big-button" onclick="hitung()">Submit</button>
+                    <button class="big-button" onclick="reset()">Reset</button>
                 </section>
             </div>
 
@@ -90,7 +94,8 @@
         <h2>Copyright ©️ 2023 KAMOD your modern calculator</h2>
     </div>
 
-
+    <!-- Java Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
